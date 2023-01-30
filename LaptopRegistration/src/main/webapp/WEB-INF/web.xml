@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+
+  
+     <servlet>
+  <servlet-name>register</servlet-name>
+  <servlet-class>com.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>register</servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>viewLaptopServlet</servlet-name>
+  <servlet-class>com.servlets.ViewLaptopServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>viewLaptopServlet</servlet-name>
+  <url-pattern>/ViewLaptopServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  <servlet-name>searchLaptopServlet</servlet-name>
+  <servlet-class>com.servlets.SearchLaptopServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>searchLaptopServlet</servlet-name>
+  <url-pattern>/SearchLaptopServlet</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+  <servlet-name>UpdateLaptopServlet</servlet-name>
+  <servlet-class>com.servlets.UpdateDetailsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>UpdateLaptopServlet</servlet-name>
+  <url-pattern>/UpdateDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+  <servlet-name>DeleteLaptopServlet</servlet-name>
+  <servlet-class>com.servlets.DeleteLaptopServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>DeleteLaptopServlet</servlet-name>
+  <url-pattern>/DeleteLaptopServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

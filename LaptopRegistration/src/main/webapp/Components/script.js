@@ -1,0 +1,1 @@
+alert("data deleted successfully")
